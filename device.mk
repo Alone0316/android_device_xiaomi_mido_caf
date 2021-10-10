@@ -158,6 +158,12 @@ PRODUCT_PACKAGES += \
     gralloc.msm8953 \
     memtrack.msm8953
 
+# Vulkan & Rendering
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.egl=adreno \
+    ro.hwui.use_vulkan=true \
+    ro.hardware.vulkan=adreno
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
