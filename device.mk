@@ -325,6 +325,10 @@ PRODUCT_PACKAGES += \
     libstagefrighthw.vendor \
     libstagefright_enc_common
 
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.2.vendor
+
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
