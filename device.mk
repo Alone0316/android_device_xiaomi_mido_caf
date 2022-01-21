@@ -126,7 +126,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
     vendor.qti.hardware.btconfigstore@2.0.vendor:64 \
     android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0-impl \
+    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
+    BluetoothQti \
+    libbthost_if \
+    libbluetooth_qti
 
 # Camera
 PRODUCT_PACKAGES += \

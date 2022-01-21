@@ -3,6 +3,7 @@
 #
 
 # Audio
+vendor.audio.feature.a2dp_offload.enable=true
 audio.deep_buffer.media=true
 audio.offload.min.duration.secs=30
 audio.offload.video=true
