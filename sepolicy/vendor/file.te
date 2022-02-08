@@ -1,5 +1,6 @@
 # Camera
 type camera_socket, file_type, data_file_type;
+type vendor_camera_data_file, file_type, data_file_type;
 
 # Fingerprint
 type fpc_data_file, file_type, data_file_type, core_data_file_type;
@@ -14,7 +15,8 @@ type proc_swap, fs_type;
 type rild_file, file_type, vendor_file_type;
 
 # Sensors
-type persist_sensors_file, file_type, vendor_persist_type;
+type vendor_persist_type;
+type persist_sensors_file, file_type;
 
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;

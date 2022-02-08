@@ -14,6 +14,7 @@ add_service(gx_fpd, gx_fpd_service)
 typeattribute gx_fpd data_between_core_and_vendor_violators;
 
 # Allow storing goodix data
+type persist_drm_file;
 allow gx_fpd { persist_drm_file gx_fpd_data_file }:dir create_dir_perms;
 allow gx_fpd { persist_drm_file gx_fpd_data_file }:file create_file_perms;
 
@@ -31,6 +32,7 @@ allow gx_fpd self:socket create_socket_perms_no_ioctl;
 allow gx_fpd self:{ netlink_socket netlink_generic_socket } create_socket_perms_no_ioctl;
 
 # Allow reading firmware file
+type firmware_file, fs_type, dev_type, file_type;
 r_dir_file(gx_fpd, firmware_file)
 
 # Allow read/write property

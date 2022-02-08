@@ -1,1 +1,2 @@
+type hal_gnss_qti;
 allow hal_gnss_qti self:capability { setuid setgid net_bind_service };
