@@ -173,7 +173,6 @@ PRODUCT_PACKAGES += \
     memtrack.msm8953 \
     libdisplayconfig \
     libqdMetaData \
-    libtinyxml \
     libvulkan \
     libsdmutils \
     libqdutils \
@@ -183,6 +182,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl:64 \
     android.hardware.drm@1.0-service-lazy \
+    android.hardware.drm@1.1 \
+    android.hardware.drm@1.1.vendor \
+    android.hardware.drm@1.2 \
+    android.hardware.drm@1.2.vendor \
     android.hardware.drm@1.3 \
     android.hardware.drm@1.3-service.clearkey
 
@@ -316,8 +319,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     android.hardware.power.stats@1.0-service.mock \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.2.vendor \
     vendor.qti.hardware.perf@2.0 \
     vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1 \
     vendor.qti.hardware.perf@2.1.vendor
 
 PRODUCT_COPY_FILES += \
@@ -381,11 +387,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
+# TinyXml
+PRODUCT_PACKAGES += \
+    libtinyxml
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
+
+# Surfaceflinger
+PRODUCT_PACKAGES += \
+    libdolphin
 
 # Thermal
 PRODUCT_COPY_FILES += \
