@@ -1,1 +1,4 @@
 get_prop(bootanim, userspace_reboot_exported_prop)
+allow bootanim vendor_default_prop:file { getattr  open };
+allow bootanim vendor_file:file { execute  getattr  open  read };
+
