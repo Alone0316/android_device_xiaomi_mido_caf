@@ -32,7 +32,7 @@ allow gx_fpd self:socket create_socket_perms_no_ioctl;
 allow gx_fpd self:{ netlink_socket netlink_generic_socket } create_socket_perms_no_ioctl;
 
 # Allow reading firmware file
-type firmware_file;
+type firmware_file, fs_type, dev_type, file_type;
 r_dir_file(gx_fpd, firmware_file)
 
 # Allow read/write property
