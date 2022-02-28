@@ -154,6 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    libdisplayconfig.qti.so \
     hwcomposer.msm8953 \
     gralloc.msm8953 \
     memtrack.msm8953
