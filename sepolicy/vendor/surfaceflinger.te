@@ -1,4 +1,4 @@
 allow surfaceflinger vendor_default_prop:file { getattr  open };
 allow surfaceflinger vendor_file:file { execute  getattr  open  read };
-
+allow surfaceflinger default_android_service:service_manager { find };
 
