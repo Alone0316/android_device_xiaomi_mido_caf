@@ -326,21 +326,6 @@ PRODUCT_PACKAGES += \
     libstagefrighthw.vendor \
     libstagefright_enc_common
 
-# Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service.mock \
-    android.hardware.power@1.2 \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.0 \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1 \
-    vendor.qti.hardware.perf@2.1.vendor
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
-    $(LOCAL_PATH)/configs/perf/perf-profile0.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perf-profile0.conf
-
 # Public libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -460,3 +445,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+# device/qcom/common modules
+TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
+    perf
