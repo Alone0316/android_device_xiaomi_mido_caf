@@ -174,6 +174,7 @@ PRODUCT_PACKAGES += \
     libqdMetaData \
     libvulkan \
     libsdmutils \
+    libsdmutils.vendor \
     libqdutils \
     vendor.display.config@1.0.vendor
 
