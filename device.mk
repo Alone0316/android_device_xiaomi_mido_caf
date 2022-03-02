@@ -413,7 +413,8 @@ PRODUCT_PACKAGES += \
 
 # Surfaceflinger
 PRODUCT_PACKAGES += \
-    libdolphin
+    libskewknob_system \
+    libskewknob_system.vendor
 
 # Thermal
 PRODUCT_COPY_FILES += \
