@@ -322,6 +322,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw \
+    libstagefrighthw.vendor \
     libstagefright_enc_common
 
 # Power
