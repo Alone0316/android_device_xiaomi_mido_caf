@@ -1002,6 +1002,10 @@ system_ext/lib64/libdolphin.so|4d2b7821d334ecd0c02820c71b6e13c3e1f2128c
 system_ext/lib/libskewknob_system.so|ac4d2a0b97fe042dc8212bf5f044c1b81d404335
 system_ext/lib64/libskewknob_system.so|5a4a5b3cfd4f44954cf1bc4f6ffd295b00ebbad3
 
+# libdisplaydebug
+vendor/lib/libdisplaydebug.so|fb84e21e064824776e2c0b68675bae429689b7da
+vendor/lib64/libdisplaydebug.so|c256c13687d653a1e00359bba7b81f96578818c7
+
 # Perf - from LA.UM.8.6.2.r1-08400-89xx.0
 vendor/bin/energy-awareness|056792da4f0bcfc34b1f85e3ee67820d8c80627f
 
