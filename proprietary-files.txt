@@ -1006,6 +1006,10 @@ system_ext/lib64/libskewknob_system.so|5a4a5b3cfd4f44954cf1bc4f6ffd295b00ebbad3
 vendor/lib/libdisplaydebug.so|fb84e21e064824776e2c0b68675bae429689b7da
 vendor/lib64/libdisplaydebug.so|c256c13687d653a1e00359bba7b81f96578818c7
 
+# liblibqti-perfd-client_system
+system_ext/lib/libqti-perfd-client_system.so|c7e3acd4bbf8247c881e33156980a82f7f17993e
+system_ext/lib64/libqti-perfd-client_system.so|251381d2853751ed2a55ae874f3009f36491967d 
+
 # Perf - from LA.UM.8.6.2.r1-08400-89xx.0
 vendor/bin/energy-awareness|056792da4f0bcfc34b1f85e3ee67820d8c80627f
 
