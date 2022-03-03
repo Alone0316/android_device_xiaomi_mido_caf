@@ -11,4 +11,6 @@ allow ueventd {
 
 allow ueventd self:capability kill;
 allow ueventd sysfs_battery_supply:dir { getattr  search };
+allow ueventd sysfs_mmc_host:file { getattr };
+allow ueventd firmware_file:file { getattr  open  read };
 

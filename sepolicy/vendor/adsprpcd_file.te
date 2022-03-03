@@ -1,0 +1,2 @@
+allow adsprpcd_file adsprpcd_file:filesystem { associate };
+
