@@ -1,5 +1,5 @@
 allow hal_sensors_default hal_sensors_default:socket { read };
-allow hal_sensors_default device:chr_file { open  read };
+allow hal_sensors_default device:chr_file { open  read write };
 allow hal_sensors_default hal_sensors_default:socket { create  ioctl  write };
 allow hal_sensors_default persist_sensors_file:dir { getattr };
 allow hal_sensors_default persist_sensors_file:file { open  read };
