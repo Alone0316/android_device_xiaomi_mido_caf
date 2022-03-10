@@ -74,8 +74,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
     frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.software.print.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.print.xml \
-    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
-    frameworks/native/data/etc/android.software.vulkan.deqp.level-2019-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml
 
 # ANT
 PRODUCT_PACKAGES += \
@@ -155,13 +154,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.allocator@2.0-impl:64 \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.1-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    gralloc.msm8953 \
+    libdisplayconfig.qti.so \
     hwcomposer.msm8953 \
     memtrack.msm8953 \
     libdisplayconfig \
@@ -174,6 +167,13 @@ PRODUCT_PACKAGES += \
     libsdmutils.vendor \
     libqdutils \
     vendor.display.config@1.0.vendor
+    gralloc.msm8953 
+
+# Vulkan & Rendering
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.hardware.egl=adreno \
+    ro.hwui.use_vulkan=true \
+    ro.hardware.vulkan=adreno
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -393,11 +393,6 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge
-
-# Surfaceflinger
-PRODUCT_PACKAGES += \
-    libskewknob_system \
-    libskewknob_system.vendor
 
 # Thermal
 PRODUCT_COPY_FILES += \
