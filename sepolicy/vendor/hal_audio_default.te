@@ -1,1 +1,7 @@
 allow hal_audio_default sysfs:dir r_dir_perms;
+allow hal_audio_default default_prop:file { getattr  open  read };
+allow hal_audio_default device:chr_file { getattr  ioctl  open  read };
+allow hal_audio_default sysfs:file { getattr  open  read };
+allow hal_audio_default vendor_data_file:dir { add_name  write };
+allow hal_audio_default vendor_data_file:file { create  getattr  open  read };
+

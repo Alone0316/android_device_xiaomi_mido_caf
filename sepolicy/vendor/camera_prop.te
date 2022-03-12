@@ -1,0 +1,2 @@
+allow camera_prop tmpfs:filesystem { associate };
+
