@@ -1,1 +1,3 @@
 allow zygote self:capability kill;
+allow zygote vendor_file:file { execute  getattr  open  read };
+
