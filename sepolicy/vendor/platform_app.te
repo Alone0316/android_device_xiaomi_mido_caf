@@ -2,3 +2,5 @@ type hal_alarm_qti_default;
 type hal_alarm_qti_hwservice;
 allow platform_app hal_alarm_qti_default:binder call;
 allow platform_app hal_alarm_qti_hwservice:hwservice_manager find;
+allow platform_app device:chr_file { ioctl  read };
+allow platform_app init:binder { call };

@@ -1,0 +1,4 @@
+allow priv_app camera_prop:file { read };
+allow priv_app device:chr_file { ioctl  read };
+allow priv_app unlabeled:file { read };
+
