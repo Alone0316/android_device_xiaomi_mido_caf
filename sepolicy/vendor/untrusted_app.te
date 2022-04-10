@@ -2,4 +2,6 @@ dontaudit untrusted_app virtual_ab_prop:file read;
 dontaudit untrusted_app camera_prop:file read;
 allow untrusted_app device:chr_file { ioctl  read };
 allow untrusted_app unlabeled:file { read };
+allow untrusted_app cgroup:file { read };
+allow untrusted_app system_lib_file:file { execmod };
 
