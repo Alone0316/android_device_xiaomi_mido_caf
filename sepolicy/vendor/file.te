@@ -38,3 +38,6 @@ type persist_sensors_file, file_type;
 
 # Touchscreen
 type proc_touchpanel, fs_type, sysfs_type, proc_type;
+
+#QSPM
+type hal_qspmhal_default_exec, file_type, data_file_type;
