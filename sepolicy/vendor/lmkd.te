@@ -1,0 +1,2 @@
+allow lmkd hwservicemanager_prop:file { getattr  open  read };
+
