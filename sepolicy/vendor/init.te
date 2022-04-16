@@ -126,5 +126,6 @@ allow init ion_device:chr_file { ioctl  open  read };
 allow init proc:file { write };
 allow init servicemanager:binder { call  transfer };
 allow init vendor_toolbox_exec:file { execute_no_trans };
-allow init video_device:chr_file { ioctl  open  read };
+allow init video_device:chr_file { ioctl  open  read write };
+allow init hal_qspmhal_hwservice:hwservice_manager { add  find };
 
